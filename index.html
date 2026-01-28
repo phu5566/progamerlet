@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ເວັບໄຊແນະນຳສະຖານທີ່ທ່ອງທ່ຽວ</title>
+    
+    <style>
+        /* ນຳໃຊ້ Font ທີ່ອ່ານງ່າຍ */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Lao', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header-section h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* ຈັດວາງ Card ໃຫ້ລຽງກັນ */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ອອກແບບ Card ແລະ ລິ້ງ */
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            text-decoration: none; /* ເອົາຂີດກ້ອງລິ້ງອອກ */
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        /* ເອັບເຟັກເວລາເອົາເມົ້າຊີ້ (Hover) */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            border-color: #3498db;
+        }
+
+        /* ສ່ວນຂອງຮູບພາບ */
+        .card-image {
+            width: 100%;
+            height: 220px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.1);
+        }
+
+        /* ສ່ວນຂອງຂໍ້ຄວາມທາງລຸ່ມ */
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h2 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .card:hover .btn-link {
+            border-bottom: 2px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h1>ຫນ້າດາວໂຫລດໂປຮແກຮມທີ່ສຳຄັນ</h1>
+        <p>ມາສາຍນີ້ຕ້ອງອົດທົນນຳມັນແລະຫາຄວາມຮູ້ດ້ວຍຕົນເອງທໍ້ແລ້ວຕ້ອງອີກຈົນກວ່າຈະເຂົ້າໃຈ</p>
+    </div>
+
+    <div class="container">
+        <a href="https://code.visualstudio.com/" class="card">
+            <div class="card-image">
+                <img src="img/download (11).jpg" alt="">
+                
+            </div>
+            <div class="card-content">
+                <h2>ຕົວຂຽນໂຄ້ດແລະລັນໂຄ້ດ</h2>
+                <p>ໃຫ້ກົດດາວໂຫລດໃນຄອມແລ້ວຕີດຕັ້ງໃຫ້ສຳເລັດ ຕີດຕັ້ງສຳເລັດແລ້ວໃຫ້ກົດເຂົ້າໂປຮແກມເພື່ອຕີດຕັ້ງຫຍັງຕ່າງໃນລະບົບ VS code.</p>
+                <span class="btn-link">ດາວໂຫລດ →</span>
+            </div>
+        </a>
+
+        <a href="https://www.apachefriends.org/" class="card">
+            <div class="card-image">
+                <img src="img/download.png" alt="">
+                
+            </div>
+            <div class="card-content">
+                <h2>mysql ໄວ້ໃສ່ຖານຂໍ້ມູນເວັບ</h2>
+                <p>ໂຕນິຄືຖານຂໍ້ມູນໃໍ້ສຳລັບPHPເມື່ອສ້າງການປ້ອນຂໍ້ມູນກໍ່ຕ້ອງມີໂຕເກັບຂໍ້ມູນໃຫ້ເຮົາໂຕນິຄືໂຕສຳຄັນເລີຍ.</p>
+                <span class="btn-link">ດາວໂຫລດ →</span>
+            </div>
+        </a>
+
+        <a href="https://www.google.com/maps" class="card">
+            <div class="card-image">
+                <img src="img/download (1).png" alt="">
+                
+            </div>
+            <div class="card-content">
+                <h2>ນິຄືພາສາຂອງໄຟຮທີ່ຈະໄດ້ຂຽນໃນໂປຮເຈັກຕ່າງໆໃນເວັບ</h2>
+                <p>ໃນພາສາໃນຮູບນິເຮັດຫນ້າທີ່ຕ່າງກັນໃໍຊ້ງ່າຍແລະເຂົ້າໃຈງ່າຍເປັນພາສາໄວ້ຝຶກຫັດແລະເຮັດເປັນບໍລິສັດໄດ້.</p>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        // ເພີ່ມລູກຫຼິ້ນເມື່ອກົດ Card
+        const cards = document.querySelectorAll('.card');
+        
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('h2').innerText;
+                console.log('ທ່ານກຳລັງລິ້ງໄປເບິ່ງຂໍ້ມູນກ່ຽວກັບ: ' + title);
+            });
+        });
+    </script>
+
+</body>
+</html>

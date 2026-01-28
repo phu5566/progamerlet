@@ -1,0 +1,74 @@
+/* ຈັດວາງກຸ່ມ Card */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* ໂຕ Card */
+.custom-card {
+    width: 320px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden; /* ເພື່ອໃຫ້ຮູບບໍ່ລົ້ນຂອບມົນ */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* ສ່ວນຮູບພາບ */
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ສ່ວນຂໍ້ຄວາມທາງກອງ */
+.card-body {
+    padding: 20px;
+}
+
+.tag {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-body h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ປຸ່ມ */
+.btn-more {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-more:hover {
+    background: #555;
+}
